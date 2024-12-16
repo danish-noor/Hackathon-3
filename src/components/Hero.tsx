@@ -17,7 +17,7 @@ const Hero = () => {
               Shop Now 
             </button>
           </div>
-          <div className="px-[77px] py-[115px]">
+          <div className="px-[77px] py-[115p]">
             <Image
               src="/Images/chair1.png"
               alt="chair1"

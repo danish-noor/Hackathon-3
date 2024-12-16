@@ -35,7 +35,8 @@ export default function TopCategories() {
                 alt={category.title}
                 className="w-[424px] h-[424px] pt-[40px]"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-npm fund
+                 opacity-50 text-white p-4">
                 <h3 className="text-lg font-semibold">{category.title}</h3>
                 <p className="text-sm">{category.products}</p>
               </div>

@@ -22,7 +22,7 @@ const Header1 = () => {
       <section className="w-[202px] h-[17px] mr-[40px] flex justify-between items-center  ">
        <div className="w-[37px] h-[17px] font-Inter text-[13px] text-[#FFFFFF] hover:underline cursor-pointer  text-center flex justify-between items-center  " >Eng
              <div className="w-[7px] h-[3.5px]" ><Image
-                src="/Images/Vector (3).png"
+                src="/Images/Vector.png"
                 alt="vector3"
                 width={1000}
                 height={1000}
@@ -39,7 +39,7 @@ const Header1 = () => {
               <div className="w-[87px] h-[17px] flex justify-between items-center ">
               <div className="w-[16px] h-[16px]">
               <Image
-                src="/Images/c-need.png"
+                src="/Images/alert-circle 1.png"
                 alt="N-p"
                 width={1000}
                 height={1000}
