@@ -1,4 +1,4 @@
-import { Inter, Poppins } from "next/font/google";
+import { Inter, Poppins, Roboto, } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -15,6 +15,7 @@ const config: Config = {
       fontFamily:{
         Poppins: ['poppins','sans-sarif'],
         inter: ['Inter','sans-sarif'],
+        Roboto: ['Roboto','sans-sarif'],
       },
 
 

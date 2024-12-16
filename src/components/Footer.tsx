@@ -1,20 +1,17 @@
 import Image from "next/image";
 import React from "react";
-import { LuSendHorizontal } from "react-icons/lu";
 import { FiFacebook } from "react-icons/fi";
 import { CiTwitter } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 import { FaYoutube } from "react-icons/fa";
-import { SiAmericanexpress } from "react-icons/si";
-import { FaCcPaypal } from "react-icons/fa6";
 
 
 const Footer = () => {
   return (
     <div>
-    <div className="wrapper h-full pl-[300px] pt-[14px] pr-[300px] pb-[14px] flex justify-between ">
-      <div className="w-[1270px] h-[440px] flex justify-evenly pt-[10%] ">
+    <div className="wrapper w-[1920] h-[418px] px-[300px] py-[80px] mt-2  border-t-2 border-gray-300 flex justify-between items-center ">
+      <div className="flex justify-evenly pt-[10%] gap-x-[120px]">
         <div className="w-[350px] h-[198px]">
         <div className='w-[166px] h-[40px] flex'>
             <div ><Image src='/Images/Logo Icon.png' alt='sofa' width={1000} height={1000} className='w-[40px] h-[40px]' /></div>
@@ -38,7 +35,10 @@ const Footer = () => {
         <div>
           <h2 className="w-[85px] h-[28px] mb-4 text-[20px] font-poppins font-[500] text-[#9A9CAA]">
             CATEGORY
-          </h2>
+            </h2>
+          <p className="w-[94px] h-[48px] font-poppins text-[16px] font-normal text-[#272343]">
+            Sofa
+          </p>
           <p className="w-[94px] h-[48px] font-poppins text-[16px] font-normal text-[#272343]">
             Armchair
           </p>
@@ -79,14 +79,17 @@ const Footer = () => {
           NEWSLETTER
           </h2>
 
-          <button className="flex bg-[#FAFAFA] text-[#000000] w-[217px] gap-[10px] h-[48px] pl-[16px] pt-[12px] pb-[12px] border-[1.5px] rounded-[4px]">
+          <div className="flex justify-between items-center gap-14 bg-[#FAFAFA] text-[#000000] w-[217px] h-[48px] pl-[16px] pt-[12px] pb-[12px] border-[1.5px] rounded-[4px]">
             <input
               type="email"
               placeholder="Enter your email"
               className="w-[150px] bg-[#FAFAFA] text-[#000000]"
             />
-            <LuSendHorizontal className="w-[20px] h-[18px] mt-1 text-[#272343]" />
+          
+          <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-[#029FAE] border-0 py-2 px-6 focus:outline-none hover:bg-[#029FAE] rounded">
+            Subscribe
           </button>
+          </div>
           <p className="w-[194] opacity-[70%] h-[18px] font-poppins text-[12px] font-normal text-[#272343]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim.
           </p>
@@ -95,30 +98,25 @@ const Footer = () => {
    </div>
 
 
-    <div className="bg-gray-100 py-6">
+    <div className="wrapper w-[1920] h-[75px] bg-gray-100 py-6 px-[300px] ">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
         <p className="mb-4 md:mb-0">
           &copy; 2021 - BLOGY - Designed & Developed by{" "}
           <a
-            href="https://zakirsoft.com"
-            className="text-gray-700 font-semibold hover:underline"
-          >
-            Zakirsoft
+            href="#"
+            className="text-gray-700 font-semibold hover:underline">
+            Danish Noor
           </a>
         </p>
-        <div className="flex justify-between items-center ">
-          <div><FaCcPaypal className="h-[24px] w-[24px] "/></div>
-          <div>PAYPAL</div>
-          
-
-          
-           
-          
+          <div className="w-[227px] h-[27px]"  >
+            <Image src="/Images/Footer13.png" alt="paypal-pic" width={500} height={500}/>
+          </div>
           </div>
         </div>
       </div>
-    </div>
-    
+
+
   )
 };
+
 export default Footer;
