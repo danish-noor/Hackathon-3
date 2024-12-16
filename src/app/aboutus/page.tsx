@@ -15,7 +15,7 @@ const AboutUs = () => {
                     <Buttton />
                 </div>
             </div>
-            <div className='w-[619px] h-[478px] mt-[100px] border-2 border-red-900'>
+            <div className='w-[619px] h-[478px] mt-[100px]'>
                 <Image src="/Images/chair2.png" alt='chair' width={100} height={100} className='w-full h-full' />
             </div>
         </div>
