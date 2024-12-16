@@ -30,7 +30,7 @@ const Header1 = () => {
               </div>
        
       
-        <div className="w-[30px] h-[17px] font-Inter text-[13px] mr-2  text-[#FFFFFF] font-weight-400 hover:underline cursor-pointer">
+        <div className="w-[30px] h-[17px] font-Inter text-[13px] mr-2 text-[#FFFFFF] font-weight-400 hover:underline cursor-pointer">
         <Link href={'/faqpage'}>Faqs</Link>
           </div>
 
