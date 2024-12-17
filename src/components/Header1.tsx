@@ -19,37 +19,41 @@ const Header1 = () => {
         </p>
       </section>
 
-      <section className="w-[202px] h-[17px] mr-[40px] flex justify-between items-center  ">
-       <div className="w-[37px] h-[17px] font-Inter text-[13px] text-[#FFFFFF] hover:underline cursor-pointer  text-center flex justify-between items-center  " >Eng
-             <div className="w-[7px] h-[3.5px]" ><Image
-                src="/Images/Vector.png"
-                alt="vector3"
-                width={1000}
-                height={1000}
-              /></div>
-              </div>
-       
-      
-        <div className="w-[30px] h-[17px] font-Inter text-[13px] mr-2 text-[#FFFFFF] font-weight-400 hover:underline cursor-pointer">
-        <Link href={'/faqpage'}>Faqs</Link>
+      <section className="w-[202px] h-[17px] gap-[24px] mr-[40px] flex justify-between items-center  ">
+        <div className="w-[37px] h-[17px] font-Inter text-[13px] text-[#FFFFFF] hover:underline cursor-pointer flex justify-between items-center text-center">
+          Eng
+          <div className="w-[7px] h-[3.5px] ">
+            <Image
+              src="/Images/Vector.png"
+              alt="vector3"
+              width={1000}
+              height={1000}
+            />
           </div>
+        </div>
 
+        <div className="w-[30px] h-[17px] font-Inter text-[13px] text-[#FFFFFF] hover:underline cursor-pointer">
+          <Link href={"/faqpage"}>Faqs</Link>
+        </div>
+
+        <div className="w-[87px] h-[17px] flex justify-between items-center ">
+          <div className="w-[16px] h-[16px]">
+            <Image
+              src="/Images/alert-circle1.png"
+              alt="N-p"
+              width={1000}
+              height={1000}
+            />
+          </div>
            
-
-              <div className="w-[87px] h-[17px] flex justify-between items-center ">
-              <div className="w-[16px] h-[16px]">
-              <Image
-                src="/Images/alert-circle 1.png"
-                alt="N-p"
-                width={1000}
-                height={1000}
-              /></div>
-
-               <p className="w-[67px] h-[17px] font-Inter text-[13px] text-[#FFFFFF] font-weight-  hover:underline cursor-pointer flex justify-between items-center  ">Need Help</p>
-              </div>
-            
-          </section>
-        </main>
+           <div className="w-[78px] h-[17px]">
+          <p className=" font-Inter text-[13px] text-[#FFFFFF] leading-[16.9px] font-normal hover:underline cursor-pointer ">
+            Need Help
+          </p>
+        </div>
+        </div>
+      </section>
+    </main>
   );
 };
 
