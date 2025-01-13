@@ -33,8 +33,8 @@ const Cart = () => {
 
   return (
     
-        <div className="container w-[1609px] h-[632.89px] mx-[174p] ml-[179p] pl-[120px] ">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="w-full grid-cols-1 sm:grid-col-2 md:grid-col-3 lg:grid-col-3 gap-6 flex justify-between items-center  ">
+     
         <div className="col-span-2">
           <h1 className="text-2xl font-bold mb-4">Bag</h1>
           {cartItems.map((item) => (
@@ -88,7 +88,6 @@ const Cart = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

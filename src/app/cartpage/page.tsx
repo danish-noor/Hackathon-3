@@ -3,13 +3,11 @@ import React from 'react'
 
 const CartPage = () => {
   return (
-    <div className="wrapper w-[1920px] h-[722px] mt-[-107px] pl-[179px]">
-     <div className='w-[1609px] h-[632.89px] my-[174px]'> 
-      <div className='w-[1100px] h-[547.89px]'>
+    <div className="w-full py-4 sm:px-6 md:px-8 lg:px-16 flex flex-col md:flex-cols-2 lg:flex-cols-4 ">
         <Cart />
       </div>
-      </div>
-    </div>
+
+   
   )
 }
 

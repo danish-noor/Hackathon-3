@@ -1,12 +1,17 @@
-import { IoCartOutline } from "react-icons/io5";
-import Heading from "./Heading";
+import React from "react";
 
-interface CardsProps {
-  heading: string; 
+
+interface Product {
+  id: number;
+  image: string;
+  label: string | null;
+  name: string;
+  price: string;
+  oldPrice: string | null;
 }
 
-export default function Images5() {
-  const products = [
+const Images5: React.FC = () => {
+  const products: Product[] = [
     {
       id: 1,
       image: "/images/blackchair1.png",
@@ -48,36 +53,39 @@ export default function Images5() {
       oldPrice: null,
     },
   ];
+
   return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-          {products.map((product) => (
-              <div
-              key={product.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="relative">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-[263px] h-[263px] object-cover"
-                />
-                
-                
-              </div>
-
-              <div className="flex justify-between items-end p-1">
-                <h3 className="text-gray-700 font-medium font-[#272343]">{product.name}</h3>
-                <div className="flex  justify-between mt-2">
-                  <span className="text-gray-800 font-bold">
-                    {product.price}
-                  </span>
-                  
-
-                  
-                </div>
-              </div>
+    <div className="w-full max-w-[1920px] md:mx-[300px] sm:mx-6 my-12">
+      <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
+        Featured Products
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        {products.map((product) => (
+          <div
+            key={product.id}
+            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+          >
+            <div className="relative">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-60 object-cover"
+              />
+              {product.label && (
+                <span className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
+                  {product.label}
+                </span>
+              )}
             </div>
-          ))}
-        </div>
-)
-}
+            <div className="flex justify-between items-center p-4">
+              <h3 className="text-gray-700 font-medium">{product.name}</h3>
+              <div className="text-gray-800 font-bold">{product.price}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Images5;

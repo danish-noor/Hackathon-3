@@ -1,15 +1,16 @@
+import React from "react";
 import Cards from "./Cards";
-import Heading from "./Heading";
 
-
-export default function FeaturedProducts() {
+export default function FeaturedProducts(): JSX.Element {
   return (
-    <>
-    
-    <h2 className=" wrapper flex justify-between px-[300px] pt-[100px] text-2xl font-semibold text-gray-800 mb-6">Featured Products</h2>
-    <main className="wrapper w-[1920px] h-[461px] px-[300px] mt-[30px] flex justify-between ">
-    <Cards />
-    </main>
-    </>
+    <div className="py-4 sm:mx-6 md:mx-8 lg:mx-16 flex flex-col sm:flex-cols-2 md:flex-cols-3 lg:flex-cols-4">
+      <h2 className="pt-[150px] text-2xl font-semibold text-gray-800 mb-6 ">
+        Featured Products
+      </h2>
+      <main >
+        <Cards />
+      </main>
+    </div>
   );
 }
+

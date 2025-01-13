@@ -4,57 +4,58 @@ import React from "react";
 
 const Header1 = () => {
   return (
-    <main className="wrapper w-[1920px] h-[45px] bg-[#272343] px-[300px] py-[14.5px] flex justify-between items-center ">
-      <section className="w-[231px] h-[16px] flex justify-between items-center">
-        <div className=" w-[16px] h-[16px]">
+    <header className="w-full bg-[#171718] py-4 sm:px-6 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center">
+      {/* Free Shipping Section */}
+      <div className="flex items-center space-x-4">
+        <div className="w-4 h-4">
           <Image
             src="/Images/Vector-1.png"
-            alt="check"
-            width={100}
-            height={100}
+            alt="Check Icon"
+            width={16}
+            height={16}
           />
         </div>
-        <p className="font-inter text-[13px] text-[#FFFFFF] ">
+        <p className="text-sm text-white font-inter">
           Free shipping on all orders over $50
         </p>
-      </section>
+      </div>
 
-      <section className="w-[202px] h-[17px] gap-[24px] mr-[40px] flex justify-between items-center  ">
-        <div className="w-[37px] h-[17px] font-Inter text-[13px] text-[#FFFFFF] hover:underline cursor-pointer flex justify-between items-center text-center">
-          Eng
-          <div className="w-[7px] h-[3.5px] ">
-            <Image
-              src="/Images/Vector.png"
-              alt="vector3"
-              width={1000}
-              height={1000}
-            />
-          </div>
+      {/* Right Section */}
+      <div className="flex items-center space-x-6 mt-4 md:mt-0">
+        {/* Language Dropdown */}
+        <div className="flex items-center space-x-2 cursor-pointer text-sm text-white hover:underline">
+          <span>Eng</span>
+          <Image
+            src="/Images/Vector.png"
+            alt="Dropdown Icon"
+            width={7}
+            height={4}
+          />
         </div>
 
-        <div className="w-[30px] h-[17px] font-Inter text-[13px] text-[#FFFFFF] hover:underline cursor-pointer">
-          <Link href={"/faqpage"}>Faqs</Link>
+        {/* FAQ Link */}
+        <div className="text-sm text-white hover:underline">
+          <Link href="/faqpage">Faqs</Link>
         </div>
 
-        <div className="w-[87px] h-[17px] flex justify-between items-center ">
-          <div className="w-[16px] h-[16px]">
-            <Image
-              src="/Images/alert-circle1.png"
-              alt="N-p"
-              width={1000}
-              height={1000}
-            />
-          </div>
-           
-           <div className="w-[78px] h-[17px]">
-          <p className=" font-Inter text-[13px] text-[#FFFFFF] leading-[16.9px] font-normal hover:underline cursor-pointer ">
+        {/* Need Help Section */}
+        <div className="flex items-center space-x-2">
+          <Image
+            src="/Images/alert-circle1.png"
+            alt="Help Icon"
+            width={16}
+            height={16}
+          />
+          <p className="text-sm text-white hover:underline cursor-pointer">
             Need Help
           </p>
         </div>
-        </div>
-      </section>
-    </main>
+      </div>
+    </header>
   );
 };
 
 export default Header1;
+
+
+

@@ -1,27 +1,48 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 const Header2 = () => {
   return (
-    <div className="wrapper w-[1920px] h-[84px] bg-[#F0F2F3] pl-[300px] pt-[14px] pr-[300px] pb-[14px] flex justify-between opacity-100  ">
-        <div className='w-[166px] h-[40px] flex '>
-            <div ><Image src='/Images/Logo Icon.png' alt='sofa' width={1000} height={1000} className='w-[40px] h-[40px]' /></div>
-            <div className='w-[118px] h-[31px] font-medium text-[26px] pl-[8px] text-[#272343] opacity-100'>Comforty</div>
-        </div>
-        
-        <div className='w-[120px] h-[44px] mr-[40px] flex justify-between items-center bg-[#FFFFFF] rounded-[8px]'>
-            <div className='w-[56px] h-[22px] flex gap-4 pl-[6px]'>
-                    <Image src='/Images/Buy 2.png' alt='cart' width={1000} height={1000} className='w-[22px] h-[22px]' />
-                <div className=' w-[26px] h-[13px] flex hover:underline cursor-pointer'><Link href={'/cartpage'}>Cart </Link></div>
+    <header className="w-full bg-[#F0F2F3] py-6 sm:px-6 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center">
+      {/* Logo Section */}
+      <div className="flex items-center pb-2">
+        <Image
+          src="/Images/Logo Icon.png"
+          alt="Comforty Logo"
+          width={40}
+          height={40}
+          className="w-10 h-10"
+        />
+        <span className="text-2xl font-medium text-[#272343] pl-2 ">Comforty</span>
+      </div>
 
-                <Image src='/Images/No.png' alt='cart' width={1000} height={1000} className='w-[20px] h-[20px]' />
+      {/* Cart Section */}
+      <div className="flex items-center bg-white rounded-lg px-4 py-2">
+        <Image
+          src="/Images/Buy 2.png"
+          alt="Cart Icon"
+          width={22}
+          height={22}
+          className="w-6 h-6"
+        />
+        <Link
+          href="/cartpage"
+          className="text-sm text-[#272343] font-medium hover:underline pl-2"
+        >
+          Cart
+        </Link>
+        <Image
+          src="/Images/No.png"
+          alt="Notification Icon"
+          width={20}
+          height={20}
+          className="w-5 h-5 ml-2"
+        />
+      </div>
+    </header>
+  );
+};
 
-            </div>
+export default Header2;
 
-        </div>
-    </div>
-  )
-}
-
-export default Header2

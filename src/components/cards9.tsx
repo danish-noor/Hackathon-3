@@ -5,7 +5,7 @@ interface CardsProps {
   heading: string; 
 }
 
-export default function Cards() {
+export default function Cards9() {
   const products = [
     {
       id: 1,
@@ -39,6 +39,70 @@ export default function Cards() {
       price: "$20",
       oldPrice: null,
     },
+    {
+        id: 1,
+        image: "/images/chair2.png",
+        label: "New",
+        name: "Library Stool Chair",
+        price: "$20",
+        oldPrice: null,
+      },
+      {
+        id: 2,
+        image: "/images/pinkchair1.png",
+        label: "Sales",
+        name: "Library Stool Chair",
+        price: "$20",
+        oldPrice: "$39",
+      },
+      {
+        id: 3,
+        image: "/images/orange1.png",
+        label: null,
+        name: "Library Stool Chair",
+        price: "$20",
+        oldPrice: null,
+      },
+      {
+        id: 4,
+        image: "/images/white1.png",
+        label: null,
+        name: "Library Stool Chair",
+        price: "$20",
+        oldPrice: null,
+      },
+      {
+        id: 1,
+        image: "/images/chair2.png",
+        label: "New",
+        name: "Library Stool Chair",
+        price: "$20",
+        oldPrice: null,
+      },
+      {
+        id: 2,
+        image: "/images/pinkchair1.png",
+        label: "Sales",
+        name: "Library Stool Chair",
+        price: "$20",
+        oldPrice: "$39",
+      },
+      {
+        id: 3,
+        image: "/images/orange1.png",
+        label: null,
+        name: "Library Stool Chair",
+        price: "$20",
+        oldPrice: null,
+      },
+      {
+        id: 4,
+        image: "/images/white1.png",
+        label: null,
+        name: "Library Stool Chair",
+        price: "$20",
+        oldPrice: null,
+      },
     
   ];
   return (

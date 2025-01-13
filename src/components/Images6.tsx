@@ -10,7 +10,7 @@ export default function Images6() {
   ];
 
   return (
-    <div className=" wrapper w-[1324px] h-[319px] my-[100px] flex flex-col justify-between ">
+    <div className="wrapper w-[1324px] h-[319px] my-[100px] flex flex-col justify-between ">
       <h2 className="w-[1324px] h-[59px] text-[50px] leading-[58.59px] font-Roboto text-center  ">Follow products and discounts on Instagram</h2>
       <div className="w-[1324px] h-full flex justify-between items-end">
       <div className="grid grid-cols-6 gap-6">
