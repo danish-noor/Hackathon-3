@@ -1,11 +1,7 @@
+import React from "react";
 import { IoCartOutline } from "react-icons/io5";
-import Heading from "./Heading";
 
-interface CardsProps {
-  heading: string; 
-}
-
-export default function Cards9() {
+const Cards9 = () =>  {
   const products = [
     {
       id: 1,
@@ -40,7 +36,7 @@ export default function Cards9() {
       oldPrice: null,
     },
     {
-        id: 1,
+        id: 5,
         image: "/images/chair2.png",
         label: "New",
         name: "Library Stool Chair",
@@ -48,7 +44,7 @@ export default function Cards9() {
         oldPrice: null,
       },
       {
-        id: 2,
+        id: 6,
         image: "/images/pinkchair1.png",
         label: "Sales",
         name: "Library Stool Chair",
@@ -56,7 +52,7 @@ export default function Cards9() {
         oldPrice: "$39",
       },
       {
-        id: 3,
+        id: 7,
         image: "/images/orange1.png",
         label: null,
         name: "Library Stool Chair",
@@ -64,7 +60,7 @@ export default function Cards9() {
         oldPrice: null,
       },
       {
-        id: 4,
+        id: 8,
         image: "/images/white1.png",
         label: null,
         name: "Library Stool Chair",
@@ -72,7 +68,7 @@ export default function Cards9() {
         oldPrice: null,
       },
       {
-        id: 1,
+        id: 9,
         image: "/images/chair2.png",
         label: "New",
         name: "Library Stool Chair",
@@ -80,7 +76,7 @@ export default function Cards9() {
         oldPrice: null,
       },
       {
-        id: 2,
+        id: 10,
         image: "/images/pinkchair1.png",
         label: "Sales",
         name: "Library Stool Chair",
@@ -88,7 +84,7 @@ export default function Cards9() {
         oldPrice: "$39",
       },
       {
-        id: 3,
+        id: 11,
         image: "/images/orange1.png",
         label: null,
         name: "Library Stool Chair",
@@ -96,7 +92,7 @@ export default function Cards9() {
         oldPrice: null,
       },
       {
-        id: 4,
+        id: 12,
         image: "/images/white1.png",
         label: null,
         name: "Library Stool Chair",
@@ -105,9 +101,10 @@ export default function Cards9() {
       },
     
   ];
+
   return (
-        <div className="w-full mb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {products.map((product) => (
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {products.map((product) => (
               <div
               key={product.id}
               className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
@@ -152,5 +149,5 @@ export default function Cards9() {
             </div>
           ))}
         </div>
-)
-}
+  )}
+export default Cards9;

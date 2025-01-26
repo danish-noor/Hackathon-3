@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from "react";
 
 interface CartItem {
   id: number;
@@ -28,19 +29,19 @@ const cartItems: CartItem[] = [
   },
 ];
 
-const Cart = () => {
+const Shop = () => {
   const subtotal = cartItems.reduce((acc, item) => acc + item.price, 0);
 
   return (
     
-        <div className="w-full grid-cols-1 sm:grid-col-2 md:grid-col-3 lg:grid-col-3 gap-6 flex justify-between items-center  ">
+        <div className="max-w-full py-4 mx-auto sm:mx-6 md:mx-8 lg:mx-12 flex grid-cols-1 sm:grid-cols-2 gap-6  justify-between items-center  ">
      
-        <div className="col-span-2">
+        <div className="py-4 col-span-2">
           <h1 className="text-2xl font-bold mb-4">Bag</h1>
           {cartItems.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col md:flex-row items-center border-b py-4"
+              className="py-4 flex justify-between items-center border-b "
             >
               <Image
                 src={item.image}
@@ -49,6 +50,7 @@ const Cart = () => {
                 height={120}
                 className="rounded-md"
               />
+              <div className="flex justify-between gap-80">
               <div className="flex-1 md:ml-6 text-center md:text-left">
                 <h2 className="text-lg font-semibold">{item.name}</h2>
                 <p className="text-gray-500">Ashen Slate/Cobalt Bliss</p>
@@ -61,6 +63,7 @@ const Cart = () => {
               </div>
               <div className="mt-2 md:mt-0">
                 <p className="text-gray-700 font-bold">MRP: ${item.price}</p>
+              </div>
               </div>
             </div>
           ))}
@@ -91,4 +94,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+export default Shop;

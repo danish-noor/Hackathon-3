@@ -1,35 +1,4 @@
-// const images = [
-//   { id: 1, src: "/images/orange1.png", alt: "Orange Chair", large: true },
-//   { id: 2, src: "/images/white1.png", alt: "White Chair" },
-//   { id: 3, src: "/images/chair2.png", alt: "Grey Chair" },
-//   { id: 4, src: "/images/gray1.png", alt: "Grey Chair" },
-//   { id: 5, src: "/images/chair2.png", alt: "Grey Chair" },
-
 import Image from "next/image";
-
-// ];
-
-// export default function ChairGallery() {
-
-//     return (
-//       <main className=" my-4 sm:mx-6 md:mx-8 lg:mx-16 flex justify gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
-//         <div className="" >
-//           {images.map((image) => (
-//             <div
-//               key={image.id}
-//               className={`${image.large ? "col-span-2 row-span-2 " : "cols-span-1" }  relative overflow-hidden rounded-lg shadow-lg`}
-//             >
-//               <img
-//                 src={image.src}
-//                 alt={image.alt}
-//                 className="w-[312px] h-[312px] marker:object-cover"
-//               />
-//             </div>
-//           ))}
-//         </div>
-//       </main>
-//     );
-//   }
 
 const images = [
   { id: 1, src: "/images/orange1.png", alt: "Orange Chair", large: true },
