@@ -1,7 +1,11 @@
-import React from "react";
 import { IoCartOutline } from "react-icons/io5";
+import Heading from "./Heading";
 
-const Cards9 = () =>  {
+interface CardsProps {
+  heading: string; 
+}
+
+export default function Cards9() {
   const products = [
     {
       id: 1,
@@ -36,7 +40,7 @@ const Cards9 = () =>  {
       oldPrice: null,
     },
     {
-        id: 5,
+        id: 1,
         image: "/images/chair2.png",
         label: "New",
         name: "Library Stool Chair",
@@ -44,7 +48,7 @@ const Cards9 = () =>  {
         oldPrice: null,
       },
       {
-        id: 6,
+        id: 2,
         image: "/images/pinkchair1.png",
         label: "Sales",
         name: "Library Stool Chair",
@@ -52,7 +56,7 @@ const Cards9 = () =>  {
         oldPrice: "$39",
       },
       {
-        id: 7,
+        id: 3,
         image: "/images/orange1.png",
         label: null,
         name: "Library Stool Chair",
@@ -60,7 +64,7 @@ const Cards9 = () =>  {
         oldPrice: null,
       },
       {
-        id: 8,
+        id: 4,
         image: "/images/white1.png",
         label: null,
         name: "Library Stool Chair",
@@ -68,7 +72,7 @@ const Cards9 = () =>  {
         oldPrice: null,
       },
       {
-        id: 9,
+        id: 1,
         image: "/images/chair2.png",
         label: "New",
         name: "Library Stool Chair",
@@ -76,7 +80,7 @@ const Cards9 = () =>  {
         oldPrice: null,
       },
       {
-        id: 10,
+        id: 2,
         image: "/images/pinkchair1.png",
         label: "Sales",
         name: "Library Stool Chair",
@@ -84,7 +88,7 @@ const Cards9 = () =>  {
         oldPrice: "$39",
       },
       {
-        id: 11,
+        id: 3,
         image: "/images/orange1.png",
         label: null,
         name: "Library Stool Chair",
@@ -92,7 +96,7 @@ const Cards9 = () =>  {
         oldPrice: null,
       },
       {
-        id: 12,
+        id: 4,
         image: "/images/white1.png",
         label: null,
         name: "Library Stool Chair",
@@ -101,10 +105,9 @@ const Cards9 = () =>  {
       },
     
   ];
-
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {products.map((product) => (
+        <div className="w-full mb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {products.map((product) => (
               <div
               key={product.id}
               className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
@@ -149,5 +152,5 @@ const Cards9 = () =>  {
             </div>
           ))}
         </div>
-  )}
-export default Cards9;
+)
+}

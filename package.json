@@ -6,24 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "migrate": "node scripts/migrate.mjs",
-    "cleanup": "node scripts/cleanup.mjs"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@sanity/image-url": "^1.1.0",
-    "@sanity/vision": "^3.71.0",
-    "axios": "^1.7.9",
-    "dotenv": "^16.4.7",
     "glob": "^11.0.0",
     "next": "^14.2.20",
-    "next-sanity": "^9.8.39",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.4.0",
-    "rimraf": "^6.0.1",
-    "sanity": "^3.71.0",
-    "styled-components": "^6.1.14"
+    "rimraf": "^6.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",

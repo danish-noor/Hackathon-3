@@ -3,37 +3,31 @@ import Images6 from "@/components/Images6";
 import React from "react";
 
 const AllProducts = () => {
-  return (
+  return ( 
     <>
-      {/* Featured Products Section */}
-      <div className="py-4 px-4 sm:px-6 md:px-8 lg:px-16">
-        <h2 className="pt-[150px] text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 mb-6 text-center">
-          Featured Products
-        </h2>
-        <main>
-          <Cards9 />
-        </main>
-      </div>
-
-      {/* Newsletter Section */}
-      <div className="w-full bg-[#1E28320D] py-10 px-4 sm:px-8 md:px-16 lg:px-32 flex flex-col items-center">
-        <div className="max-w-4xl flex flex-col items-center">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-Roboto text-center mb-6">
-            Or Subscribe To The Newsletter
-          </h2>
-          <div className="flex flex-col sm:flex-row items-center w-full sm:max-w-lg gap-4">
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="w-full sm:flex-1 border-b-2 border-gray-700 py-2 text-lg focus:outline-none"
-            />
-            <button className="w-full sm:w-auto px-6 py-2 bg-black text-white text-lg font-semibold">
-              Submit
-            </button>
+    <div>
+      <div className="py-4 sm:mx-6 md:mx-8 lg:mx-16 flex flex-col sm:flex-cols-2 md:flex-cols-3 lg:flex-cols-4">
+            <h2 className="pt-[150px] text-2xl font-semibold text-gray-800 mb-6 ">
+              Featured Products
+            </h2>
+            <main >
+              <Cards9 />
+            </main>
           </div>
-        </div>
-        <Images6 />
-      </div>
+          </div>
+
+<div className=" wrapper w-[1924px] h-[754px] px-[10px] my-[20px] flex  flex-col bg-[#1E28320D]  ;">
+    <div className="w-[760px] h-[165px] mt-[100px] ml-[582px] flex flex-col justify-between ">
+    <h2 className="w-[760px] h-[59px] text-[50px] leading-[58.59px] font-Roboto text-center "> Or Subscribe To The Newsletter</h2>
+    <div className="flex justify-between items-center mx-[15px] ">
+    <div className="w-[643px] h-[19px]  border-b-2 border-[#261f1f] leading-4  font-Roboto">Email Address</div>
+    <div className="w-[59px] h-[22px]  border-b-2  border-[#000000] leading-4 font-Roboto" >Submit</div>
+    </div>
+    </div>
+
+   <Images6 />
+  </div>
+
     </>
   );
 };

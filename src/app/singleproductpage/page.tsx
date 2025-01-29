@@ -7,7 +7,7 @@ import React from 'react'
 const SingleProductPage = () => {
   return (
     <>
-    <div className='max-w-full py-4 sm:mx-20 flex gap-[100px]'>
+    <div className='wrapper pl-[260px] flex gap-[100px]'>
     <div className='w-[675px] h-[607px] mt-[132px] rounded-[10px]'>
       <Image src="/Images/pinkchair1.png" alt="chair" width={500} height={500} className='w-full h-full' />
     </div>
@@ -20,8 +20,8 @@ const SingleProductPage = () => {
     </div>
     </div>
      
-    <div className='w-[1447px] h-[409px] py-4 sm:mx-6 md:mx-8 lg:mx-12 flex flex-cols-1 justify-between '>
-    <div className='w-[1446px] h-[35px] flex justify-between items-center'>
+    <div className='wrapper w-[1447px] h-[409px] my-[100px] flex flex-col justify-between '>
+    <div className='w-[1446px] h-[35px] pr-[20px] flex justify-between items-center'>
     <h2 className="w-[401px] h-[34p] px-[300p] pt-[30px] text-[28px] font-semibold text-gray-800 mb-6 leading-[]">Featured Products</h2>
     <h3 className='w-[69px] h-[22px] text-[16px]  font-semibold leading-[21.78px] border-b-2 border-[#000000]'>view all</h3>
     </div>
