@@ -3,7 +3,7 @@ import { FiPlus } from "react-icons/fi";
 
 const FAQ = () => {
   return (
-    <div className="max-w-[1320px] mx-auto p-4 bg-white">
+    <div className="max-w-[1320px] mx-auto my-32 p-4 bg-white">
       
       <div className="text-center mb-8">
         <h2 className="text-4xl font-bold text-gray-800">

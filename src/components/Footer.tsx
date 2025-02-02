@@ -100,7 +100,7 @@ const Footer: React.FC = () => {
           </a>
         </p>
         <Image
-          src="/Images/Footer13.png"
+          src="/Images/FooterLogos.png"
           alt="Payment Icons"
           width={150}
           height={50}

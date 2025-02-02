@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Header1 from "@/components/Header1";
-import Header2 from "@/components/Header2";
-import Footer from "@/components/Footer";
+import Navbar from "../components/Navbar";
+import Header1 from "../components/Header1";
+import Header2 from "../components/Header2";
+import Footer from "../components/Footer";
 
 
 

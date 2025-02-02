@@ -55,10 +55,7 @@ const Images5: React.FC = () => {
   ];
 
   return (
-    <div className="w-full max-w-[1920px] md:mx-[300px] sm:mx-6 my-12">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
-        Featured Products
-      </h2>
+    <div className="w-full sm:mx-6 my-12 lg:max-w-[1920px]">  
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {products.map((product) => (
           <div

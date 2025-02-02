@@ -41,7 +41,7 @@ const images = [
 
 export default function ChairGallery() {
   return (
-    <div className="flex gap-3 w-screen flex-col sm:flex-row justify-center items-center">
+    <div className="w-full mx-4 sm:px-6 md:px-12 lg:px-16 flex flex-col sm:flex-row justify-center items-center gap-3">
       <div className=" sm:w-[45vw] w-screen">
         <Image src={"/images/orange1.png"} alt="j" height={800} width={800} />
       </div>
