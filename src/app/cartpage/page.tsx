@@ -4,7 +4,8 @@ import Cart from '../../components/Cart'
 import React, { useEffect, useState } from 'react'
 
 const CartPage = () => {
-  const [cartComponent, setCartComponent] = useState<JSX.Element | null>(null);
+  const [cartComponent, setCartComponent] = useState<React.ReactNode | null>(null);
+
 
   useEffect(() => {
     const fetchCartComponent = async () => {

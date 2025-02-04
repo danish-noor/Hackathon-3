@@ -20,8 +20,8 @@ const SingleProductPage = () => {
     </div>
     </div>
      
-    <div className='max-w-full px-32 lg:w-[1447px] h-[409px] my-[100px] flex flex-col justify-between items-center'>
-    <div className='max-w-full mx-4 lg:w-[1446px] h-[35px] flex justify-between items-center'>
+    <div className='max-w-full px-32 lg:w-[1447px] h-[409px] my-24 flex flex-col justify-between items-center'>
+    <div className='max-w-full px-6 lg:w-[1446px] h-[35px] flex justify-between items-center'>
     <h2 className="lg:w-[401px] pt-[30px] text-[28px] font-semibold text-gray-800 mb-6">Featured Products</h2>
     <h3 className='w-[69px] h-[22px] text-[16px] font-semibold leading-[21.78px] border-b-2 border-[#000000]'>view all</h3>
     </div>

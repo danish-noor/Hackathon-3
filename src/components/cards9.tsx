@@ -1,9 +1,10 @@
+import Image from "next/image";
 import { IoCartOutline } from "react-icons/io5";
-import Heading from "./Heading";
+// import Heading from "./Heading";
 
-interface CardsProps {
-  heading: string; 
-}
+// interface CardsProps {
+//   heading: string; 
+// }
 
 export default function Cards9() {
   const products = [
@@ -113,7 +114,7 @@ export default function Cards9() {
               className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
             >
               <div className="relative">
-                <img
+                <Image 
                   src={product.image}
                   alt={product.name}
                   className="w-[312px] h-[312px] object-cover"

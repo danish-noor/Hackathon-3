@@ -7,7 +7,7 @@ export const productSchema = defineType({
   fields: [
     {
       name: "title",
-      title: "Product Title",
+      title: "title",
       type: "string",
     },
     {

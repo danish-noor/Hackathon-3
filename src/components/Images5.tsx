@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 
@@ -63,9 +64,11 @@ const Images5: React.FC = () => {
             className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
           >
             <div className="relative">
-              <img
+              <Image
                 src={product.image}
                 alt={product.name}
+                width={500}
+                height={500}
                 className="w-full h-60 object-cover"
               />
               {product.label && (

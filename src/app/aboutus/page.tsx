@@ -66,7 +66,7 @@ const Page = () => {
               <div className='w-[213px] h-[148px] text-[#007580] space-y-2'>
               <CiCreditCard1 />
                 <h2 className='text-[18px]'>Unbeatable prices</h2>
-                <p className='text-[14px]'>For our materials and quality you won't find better prices anywhere</p>
+                <p className='text-[14px]'>For our materials and quality you won&apos;t find better prices anywhere</p>
 
               </div>
 

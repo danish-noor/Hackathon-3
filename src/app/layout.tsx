@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+// import { Inter, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google"; 
 import "./globals.css";
 import Navbar from "../components/Navbar";
-import Header1 from "../components/Header1";
-import Header2 from "../components/Header2";
 import Footer from "../components/Footer";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 
-
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ 
+//    subsets: ["latin"],
+//    weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,15 +30,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-
-      
-      
       <body className={poppins.className}>
-     
-        <Header1 />
-        <Header2 />
-        <Navbar />
-
+      <Navbar/>
         {children}
         <Footer />
         

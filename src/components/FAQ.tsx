@@ -3,9 +3,9 @@ import { FiPlus } from "react-icons/fi";
 
 const FAQ = () => {
   return (
-    <div className="max-w-[1320px] mx-auto my-32 p-4 bg-white">
+    <div className="max-w-[1320px] mx-auto my-2 p-4 bg-white">
       
-      <div className="text-center mb-8">
+      <div className="text-center pb-4">
         <h2 className="text-4xl font-bold text-gray-800">
           Questions Looks Here
         </h2>
