@@ -36,54 +36,44 @@ const Page = () => {
         </div>
       </div>
 
-
-      <div className='mt-28'>
+      <div className='mt-28 px-4'>
         <h1 className='text-center font-bold text-[25px]'>What makes our Brand Different</h1>
         
-        <div className='mt-10 flex items-center justify-between'>
-          <div className='w-[300px] h-[244px] flex items-center justify-center hover:border-2'>
-              <div className='w-[213px] h-[148px] text-[#007580] space-y-2'>
-              <FaTruckFast />
+        <div className='mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
+          <div className='w-full h-[244px] flex items-center justify-center hover:border-2'>
+              <div className='w-[213px] h-[148px] text-[#007580] space-y-2 text-center'>
+              <FaTruckFast className='mx-auto' />
                 <h2 className='text-[18px]'>Next day as standard</h2>
                 <p className='text-[14px]'>Order before 3pm and get your order the next day as standard</p>
-
               </div>
-
           </div>
           
-
-          <div className='w-[300px] h-[244px] flex items-center justify-center hover:border-2'>
-              <div className='w-[213px] h-[148px] text-[#007580] space-y-2'>
-              <CiCircleCheck />
+          <div className='w-full h-[244px] flex items-center justify-center hover:border-2'>
+              <div className='w-[213px] h-[148px] text-[#007580] space-y-2 text-center'>
+              <CiCircleCheck className='mx-auto' />
                 <h2 className='text-[18px]'>Made by true artisans</h2>
                 <p className='text-[14px]'>Handmade crafted goods made with real passion and craftmanship</p>
-
               </div>
-
           </div>
 
-          <div className='w-[300px] h-[244px] flex items-center hover:border-2 justify-center'>
-              <div className='w-[213px] h-[148px] text-[#007580] space-y-2'>
-              <CiCreditCard1 />
+          <div className='w-full h-[244px] flex items-center hover:border-2 justify-center'>
+              <div className='w-[213px] h-[148px] text-[#007580] space-y-2 text-center'>
+              <CiCreditCard1 className='mx-auto' />
                 <h2 className='text-[18px]'>Unbeatable prices</h2>
                 <p className='text-[14px]'>For our materials and quality you won&apos;t find better prices anywhere</p>
-
               </div>
-
           </div>
 
-          <div className='w-[300px] h-[244px] hover:border-2 flex items-center justify-center'>
-              <div className='w-[213px] h-[148px] text-[#007580] space-y-2'>
-              <LuSprout />
+          <div className='w-full h-[244px] hover:border-2 flex items-center justify-center'>
+              <div className='w-[213px] h-[148px] text-[#007580] space-y-2 text-center'>
+              <LuSprout className='mx-auto' />
                 <h2 className='text-[18px]'>Recycled packaging</h2>
                 <p className='text-[14px]'>We use 100% recycled to ensure our footprint is more manageable</p>
-
               </div>
-
           </div>
-
         </div>
       </div>
+
 
 
       <div className='mt-28'>
