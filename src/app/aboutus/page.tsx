@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 import { FaTruckFast } from "react-icons/fa6";
 import { CiCircleCheck } from "react-icons/ci";
 import { CiCreditCard1 } from "react-icons/ci";
@@ -14,8 +14,9 @@ const Page = () => {
           <div className="w-full flex flex-col items-start  mt-14 justify-center gap-4">
             <h1 className="text-[20px] font-bold">About Us - Comforty</h1>
             <p className="text-[14px]">
-              At Comforty, we believe that the right chair can transform your space and elevate your comfort.
-              Specializing in ergonomic design, premium materials, and modern aesthetics, we craft chairs that
+              At Comforty, we believe that the right chair can transform your
+              space and elevate your comfort. Specializing in ergonomic design,
+              premium materials, and modern aesthetics, we craft chairs that
               seamlessly blend style with functionality.
             </p>
           </div>
@@ -36,110 +37,103 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='mt-28 px-4'>
-        <h1 className='text-center font-bold text-[25px]'>What makes our Brand Different</h1>
-        
-        <div className='mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
-          <div className='w-full h-[244px] flex items-center justify-center hover:border-2'>
-              <div className='w-[213px] h-[148px] text-[#007580] space-y-2 text-center'>
-              <FaTruckFast className='mx-auto' />
-                <h2 className='text-[18px]'>Next day as standard</h2>
-                <p className='text-[14px]'>Order before 3pm and get your order the next day as standard</p>
-              </div>
-          </div>
-          
-          <div className='w-full h-[244px] flex items-center justify-center hover:border-2'>
-              <div className='w-[213px] h-[148px] text-[#007580] space-y-2 text-center'>
-              <CiCircleCheck className='mx-auto' />
-                <h2 className='text-[18px]'>Made by true artisans</h2>
-                <p className='text-[14px]'>Handmade crafted goods made with real passion and craftmanship</p>
-              </div>
+      <div className="mt-28 px-4">
+        <h1 className="text-center font-bold text-[25px]">
+          What makes our Brand Different
+        </h1>
+
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="w-full h-[244px] flex items-center justify-center hover:border-2">
+            <div className="w-[213px] h-[148px] text-[#007580] space-y-2 text-center">
+              <FaTruckFast className="mx-auto" />
+              <h2 className="text-[18px]">Next day as standard</h2>
+              <p className="text-[14px]">
+                Order before 3pm and get your order the next day as standard
+              </p>
+            </div>
           </div>
 
-          <div className='w-full h-[244px] flex items-center hover:border-2 justify-center'>
-              <div className='w-[213px] h-[148px] text-[#007580] space-y-2 text-center'>
-              <CiCreditCard1 className='mx-auto' />
-                <h2 className='text-[18px]'>Unbeatable prices</h2>
-                <p className='text-[14px]'>For our materials and quality you won&apos;t find better prices anywhere</p>
-              </div>
+          <div className="w-full h-[244px] flex items-center justify-center hover:border-2">
+            <div className="w-[213px] h-[148px] text-[#007580] space-y-2 text-center">
+              <CiCircleCheck className="mx-auto" />
+              <h2 className="text-[18px]">Made by true artisans</h2>
+              <p className="text-[14px]">
+                Handmade crafted goods made with real passion and craftmanship
+              </p>
+            </div>
           </div>
 
-          <div className='w-full h-[244px] hover:border-2 flex items-center justify-center'>
-              <div className='w-[213px] h-[148px] text-[#007580] space-y-2 text-center'>
-              <LuSprout className='mx-auto' />
-                <h2 className='text-[18px]'>Recycled packaging</h2>
-                <p className='text-[14px]'>We use 100% recycled to ensure our footprint is more manageable</p>
-              </div>
+          <div className="w-full h-[244px] flex items-center hover:border-2 justify-center">
+            <div className="w-[213px] h-[148px] text-[#007580] space-y-2 text-center">
+              <CiCreditCard1 className="mx-auto" />
+              <h2 className="text-[18px]">Unbeatable prices</h2>
+              <p className="text-[14px]">
+                For our materials and quality you won&apos;t find better prices
+                anywhere
+              </p>
+            </div>
+          </div>
+
+          <div className="w-full h-[244px] hover:border-2 flex items-center justify-center">
+            <div className="w-[213px] h-[148px] text-[#007580] space-y-2 text-center">
+              <LuSprout className="mx-auto" />
+              <h2 className="text-[18px]">Recycled packaging</h2>
+              <p className="text-[14px]">
+                We use 100% recycled to ensure our footprint is more manageable
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
+      <div className="mt-28">
+        <h1 className="text-[25px] font-bold mb-10">Our Popular Products </h1>
 
-
-      <div className='mt-28'>
-        <h1 className='text-[25px] font-bold mb-10'>Our Popular Products </h1>
-
-
-        <div className='flex flex-col lg:flex-row items-center justify-between gap-4'>
-        <div className='space-y-2'>
-            
-
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
+          <div className="space-y-2">
             <Image
-                    width={500}
-                    height={500}
-                    alt='Library Stool Chair'
-                    src={"/images/LargeSofa.png"}
-                    className='w-[630px] h-[375px] hover:border-2'
-                />            
-            <div className='text-[#2a254b] text-[18px]'>
-              <p className=''>The Poplar suede sofa</p>
+              width={500}
+              height={500}
+              alt="large sofa"
+              src={"/images/LargeSofa.png"}
+              className="w-[630px] h-[375px] hover:border-2"
+            />
+            <div className="text-[#2a254b] text-[18px]">
+              <p className="">The Poplar suede sofa</p>
               <span>$99.00</span>
             </div>
-    
+          </div>
+
+          <div className="space-y-2">
+            <Image
+              width={500}
+              height={500}
+              alt="wooden chair"
+              src={"/images/woodblack.png"}
+              className="w-[305px] h-[375px] hover:border-2"
+            />
+            <div className="text-[#2a254b] text-[18px]">
+              <p className="">The Dandy chair</p>
+              <span>$99.00</span>
             </div>
+          </div>
 
-            <div className='space-y-2'>
-            
-
-        <Image
-                width={500}
-                height={500}
-                alt='Library Stool Chair'
-                src={"/images/woodblack.png"}
-                className='w-[305px] h-[375px] hover:border-2'
-            />            
-        <div className='text-[#2a254b] text-[18px]'>
-          <p className=''>The Dandy chair</p>
-          <span>$99.00</span>
-        </div>
-
-        </div>
-
-        <div className='space-y-2'>
-            
-
-        <Image
-                width={500}
-                height={500}
-                alt='Library Stool Chair'
-                src={"/images/blackchair.png"}
-                className='w-[305px] h-[375px] hover:border-2'
-            />            
-        <div className='text-[#2a254b] text-[18px]'>
-          <p className=''>The Dandy chair</p>
-          <span>$99.00</span>
-        </div>
-
-        </div>
-
-        </div>
-        
-
-
-
+          <div className="space-y-2">
+            <Image
+              width={500}
+              height={500}
+              alt="black chair"
+              src={"/images/blackchair.png"}
+              className="w-[305px] h-[375px] hover:border-2"
+            />
+            <div className="text-[#2a254b] text-[18px]">
+              <p className="">The Dandy chair</p>
+              <span>$99.00</span>
+            </div>
+          </div>
         </div>
       </div>
-    
+    </div>
   );
 };
 
