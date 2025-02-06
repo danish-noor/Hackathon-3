@@ -4,15 +4,19 @@ export default function ChairGallery() {
   return (
     <div className="w-full my-8 sm:px-6 md:px-12 lg:px-16 flex flex-col sm:flex-row justify-center items-center gap-3 rounded-md">
       <div className=" sm:w-[45vw] w-screen">
-        <Image src={"/images/orange1.png"} alt="orange chair1" height={800} width={800} />
+        <Image 
+        src="/images/orange1.png"
+        alt="orange chair1" 
+        height={800} 
+        width={800} 
+        />
       </div>
 
       <div className="flex w-screen sm:w-[45vw] gap-3">
         <div className="h-1/2 w-1/2 relative flex flex-col gap-3">
           <Image
-            className=""
             src={"/images/white1.png"}
-            alt="orange chair2"
+            alt="white1"
             height={400}
             width={400}
           />
