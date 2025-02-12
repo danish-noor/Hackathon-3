@@ -20,7 +20,7 @@ const Page = () => {
               seamlessly blend style with functionality.
             </p>
           </div>
-          <button className="bg-[#61a5ac] mt-48 hover:border-2 text-[14px] py-4 w-[179px] h-[56px]  hover:bg-[#4f8a8a]">
+          <button className="bg-[#61a5ac] mt-48 hover:border-2 text-[14px] py-4 w-[179px] h-[56px] hover:bg-[#4f8a8a]">
             View Collection
           </button>
         </div>
@@ -28,10 +28,10 @@ const Page = () => {
         {/* Right Section: Image */}
         <div className="w-full lg:w-[600px] bg-gray-400 rounded-lg overflow-hidden">
           <Image
+            src="/Images/chair2.png"
+            alt="Library-Stool-Chair"
             width={600}
             height={478}
-            alt="Library Stool Chair"
-            src="/images/chair2.png"
             className="w-full h-auto object-cover hover:border-2"
           />
         </div>
@@ -92,10 +92,10 @@ const Page = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <div className="space-y-2">
             <Image
+              src="/Images/LargeSofa.png"
+              alt="large-sofa"
               width={500}
               height={500}
-              alt="large sofa"
-              src={"/images/LargeSofa.png"}
               className="w-[630px] h-[375px] hover:border-2"
             />
             <div className="text-[#2a254b] text-[18px]">
@@ -106,10 +106,10 @@ const Page = () => {
 
           <div className="space-y-2">
             <Image
+              src="/Images/woodblack.png"
+              alt="wooden chair"
               width={500}
               height={500}
-              alt="wooden chair"
-              src={"/images/woodblack.png"}
               className="w-[305px] h-[375px] hover:border-2"
             />
             <div className="text-[#2a254b] text-[18px]">
@@ -120,10 +120,10 @@ const Page = () => {
 
           <div className="space-y-2">
             <Image
+              src="/Images/blackchair.png"
+              alt="black chair"
               width={500}
               height={500}
-              alt="black chair"
-              src={"/images/blackchair.png"}
               className="w-[305px] h-[375px] hover:border-2"
             />
             <div className="text-[#2a254b] text-[18px]">
