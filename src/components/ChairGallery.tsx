@@ -5,10 +5,11 @@ export default function ChairGallery() {
     <div className="w-full my-8 sm:px-6 md:px-12 lg:px-16 flex flex-col sm:flex-row justify-center items-center gap-3 rounded-md">
       <div className=" sm:w-[45vw] w-screen">
         <Image 
-        src="./orange1.png"
+        src="/Images/orange1.png"
         alt="orange-chair" 
         height={800} 
         width={800} 
+        className="w-full h-full object-cover"
         />
       </div>
 
